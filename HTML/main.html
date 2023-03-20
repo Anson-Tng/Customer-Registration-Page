@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<HTML>
+	<head>
+		<title>A1_Q1</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script defer src ="script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="title">Registration</div>
+			<br>
+			<!--FORM-->
+			<form id="form" action="http://www.it.murdoch.edu.au/cgi-bin/reply1.pl" method="POST">
+				<div id="errorPrint"></div>
+				<br><br>
+				<div class="username">
+				<!--Name validation implemented as symbols and numbers cant be entered in this section-->
+				<label for="name">Name:</label><br>
+				<input id="username" name="name" type="text" placeholder="Name" required>
+				<br><br>
+				</div>
+				<div class="phoneNumber">
+				<!--Mobile number format isn't well-optimised, fixed pattern-->
+				<label for="number">Mobile number:</label><br>
+				<input id="mobileNumber" name="number" type="tel" 
+				pattern="[1-6]{2} [0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder ="61 0XXX-XXX-XXX" required>
+				<br><br>
+				</div>
+				<div class ="DOB">
+				<!--Limitation #1 Date of Birth validation isn't implemented-->
+				<label for =dob">Date of Birth:</label><br>
+				<input id="DateOfBirth" name="dob" type="date" placeholder="mm/dd/yyyy" required>
+				<br><br>
+				</div>
+				<div class="selections">
+				<!--User can either left the supplements blank or select one & more-->
+				<label for="supplements">Supplements:</label><br>
+				<input type="checkbox" name="fav" value="Web Surfing "> Web Surfing<br>
+		   	    <input type="checkbox" name="fav" value="Sports "> Sports<br>
+				<input type="checkbox" name="fav" value="Music "> Music<br>
+				<input type="checkbox" name="fav" value="TVs "> TVs<br>
+				<input type="checkbox" name="fav" value="Games "> Games<br>
+				<input type="checkbox" name="fav" value="Community Service "> Community Service<br>
+				<input type="checkbox" name="fav" value="Daydreaming "> Daydreaming<br>
+				<input type="checkbox" name="fav" value="Reading "> Reading<br>
+				<input type="checkbox" name="fav" value="Meditation "> Meditation<br><br>
+				</div>
+				<br>
+				<button type="submit">SUBMIT</button>
+			</form>
+		</div>
+	</body>
+	
+</HTML>

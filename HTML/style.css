@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}	
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+#title {
+	
+}	
+
+.container{
+	max-width: 800px;
+	width: 100%;
+	background: inherit;
+	padding: 25px 30px;
+	border-radius: 5px;
+	overflow:hidden;
+}	
+
+.container .title {
+	font-size: 30px;
+	font-weight: 500;
+}
+
+input{
+		height :30px;
+	
+}
